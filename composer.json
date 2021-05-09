@@ -1,0 +1,13 @@
+{
+    "name": "carloswph/winbox-php",
+    "description": "Winbox.js wrapper in PHP.",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+    	"psr-4": {
+    		"Winbox\\": "src/"
+    	}
+    }
+}
