@@ -1,6 +1,10 @@
 # Winbox PHP
 
-A wrapper for using Winbox.js just coding in PHP.
+A wrapper for using Winbox.js just coding in PHP. Based on:
+
+<h1>
+    <img src="https://cdn.jsdelivr.net/gh/nextapps-de/winbox@master/demo/winbox.png" alt="WinBox.js: HTML5 Window Manager for the Web." width="100%">
+</h1>
 
 # Installation
 
