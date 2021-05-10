@@ -18,16 +18,15 @@ class Window
 {
 	use On;
 
-	protected $title;
+	public $title;
 
-	public $options;
+	protected $options = [];
 
-	public function __construct(string $title, array $options = null)
+	protected $data;
+
+	public function __construct(string $title)
 	{
 		$this->title = $title;
-		if(!is_null($options)) {
-			$this->options = $options;
-		}
 	}
 
 	public function setBorder($thickness)
@@ -119,6 +118,8 @@ class Window
 	public function embed(string $url)
 	{
 		$this->options['url'] = $url;
+
+		return $this;
 	}
 
 	public function setID(string $ID)
@@ -131,6 +132,8 @@ class Window
 	public function setClass(string $class)
 	{
 		$this->options['class'] = $class;
+
+		return $this;
 	}
 
 	public function cloneDom(string $selector) {}
@@ -143,6 +146,6 @@ class Window
 		$window .= PHP_EOL . '});';
 		$window .= PHP_EOL . '</script>';
 
-		echo $window; 
+		echo $window;
 	}
 }

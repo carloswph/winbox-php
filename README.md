@@ -12,6 +12,23 @@ Using this wrapper is actually pretty simple and can be done by just using two d
 
 The options can be either set by a number of different methods or passed while creating the instance as an array.
 
+```php
+require __DIR__ . '/vendor/autoload.php';
+
+?>
+
+<head>
+<?php 
+	Winbox\Init::enqueue(); // Adds Winbox.js bundle.
+	$rt = new Winbox\Window("Teste de Janela");
+?>
+</head>
+
+<body>
+	<?php $rt->render(); ?>
+</body>
+```
+
 # To-do
 
 * Add custom behaviours to the windows, through the trait On(), as well as allowing a programatic control of the windows features.
